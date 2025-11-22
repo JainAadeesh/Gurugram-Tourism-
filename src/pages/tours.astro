@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import BookingForm from '../components/BookingForm';
+---
+
+<BaseLayout title="Tours & Guides" description="Book guided tours and local guides to explore Gurugram with expert knowledge.">
+  <Hero 
+    title="Tours & Guides"
+    subtitle="Explore Gurugram with Local Experts"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Guided Tours</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Discover Gurugram's hidden gems and rich heritage with our expert local guides.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom: 4rem;">
+        <div class="card" style="padding: 2rem;">
+          <h3>Heritage Walk</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Explore the historical sites and cultural landmarks of Gurugram with a knowledgeable guide.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin: 1.5rem 0;">
+            <li>✓ Duration: 3-4 hours</li>
+            <li>✓ Visit temples and historical sites</li>
+            <li>✓ Learn about local history and culture</li>
+            <li>✓ Small group tours (max 15 people)</li>
+            <li>✓ English and Hindi speaking guides</li>
+          </ul>
+          <p style="font-weight: 600; font-size: 1.2rem; margin: 1.5rem 0;">
+            ₹800 per person
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Food Tour</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Taste the best of Gurugram's street food and local cuisine with a food expert guide.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin: 1.5rem 0;">
+            <li>✓ Duration: 3-4 hours</li>
+            <li>✓ 8-10 food stops</li>
+            <li>✓ Sample local and street food</li>
+            <li>✓ Learn about food culture</li>
+            <li>✓ Vegetarian and non-vegetarian options</li>
+          </ul>
+          <p style="font-weight: 600; font-size: 1.2rem; margin: 1.5rem 0;">
+            ₹1,500 per person
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Nature & Bird Watching</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Explore Sultanpur National Park and other natural areas with a wildlife expert.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin: 1.5rem 0;">
+            <li>✓ Duration: 4-5 hours</li>
+            <li>✓ Early morning tour (6 AM start)</li>
+            <li>✓ Spot migratory and local birds</li>
+            <li>✓ Learn about local flora and fauna</li>
+            <li>✓ Binoculars provided</li>
+          </ul>
+          <p style="font-weight: 600; font-size: 1.2rem; margin: 1.5rem 0;">
+            ₹1,200 per person
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>City Highlights Tour</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Comprehensive tour covering major attractions, modern landmarks, and cultural sites.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin: 1.5rem 0;">
+            <li>✓ Duration: 6-7 hours</li>
+            <li>✓ Visit 5-6 major attractions</li>
+            <li>✓ Transportation included</li>
+            <li>✓ Lunch break included</li>
+            <li>✓ Professional guide</li>
+          </ul>
+          <p style="font-weight: 600; font-size: 1.2rem; margin: 1.5rem 0;">
+            ₹2,500 per person
+          </p>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 4rem 0 3rem;">Book a Tour</h2>
+      <div class="grid grid-2">
+        <div>
+          <BookingForm client:load title="Request a Tour" type="tour" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3>Why Choose Our Tours?</h3>
+          <ul style="color: var(--color-text-light); line-height: 2.5; margin-top: 1.5rem;">
+            <li>✓ Expert local guides with deep knowledge</li>
+            <li>✓ Small group sizes for personalized experience</li>
+            <li>✓ Flexible scheduling</li>
+            <li>✓ Multiple language options</li>
+            <li>✓ Customizable tours available</li>
+            <li>✓ Safe and reliable service</li>
+          </ul>
+          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-bg-light); border-radius: 0.5rem;">
+            <h4>Contact Information</h4>
+            <p style="color: var(--color-text-light); margin-top: 1rem;">
+              📞 +91-XXX-XXXX-XXXX<br/>
+              📧 tours@gurugramtourism.com<br/>
+              📍 Tourism Office, Sector XX, Gurugram
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

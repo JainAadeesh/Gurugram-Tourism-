@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About Gurugram" description="Learn about Gurugram's history, culture, geography, and what makes it a unique destination.">
+  <Hero 
+    title="About Gurugram"
+    subtitle="A City of Contrasts and Opportunities"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2>History & Heritage</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--color-text-light);">
+          Gurugram, formerly known as Gurgaon, is a city in the Indian state of Haryana. The name "Gurugram" means "Village of the Guru" and is said to have been named after Guru Dronacharya, a teacher in the epic Mahabharata. The city has a rich historical legacy dating back thousands of years.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--color-text-light);">
+          In recent decades, Gurugram has transformed from a small agricultural town into one of India's major financial and technology hubs. It's now home to numerous Fortune 500 companies, making it a key destination for business travelers while still preserving its cultural heritage.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: var(--color-bg-light);">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Culture & Traditions</h2>
+      <div class="grid grid-3">
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎭</div>
+          <h3>Arts & Festivals</h3>
+          <p style="color: var(--color-text-light);">Gurugram celebrates various festivals including Diwali, Holi, and local Haryanvi festivals with great enthusiasm. The city hosts cultural events throughout the year.</p>
+        </div>
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">👗</div>
+          <h3>Traditional Attire</h3>
+          <p style="color: var(--color-text-light);">The local culture reflects Haryanvi traditions, with people often wearing traditional attire during festivals and special occasions.</p>
+        </div>
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎵</div>
+          <h3>Music & Dance</h3>
+          <p style="color: var(--color-text-light);">Folk music and dance forms like Ghoomar and Phag are part of the cultural heritage, often performed during celebrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Geography & Climate</h2>
+      <div class="grid grid-2">
+        <div class="card" style="padding: 2rem;">
+          <h3>Location</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+            Gurugram is located in the National Capital Region (NCR) of India, approximately 30 kilometers southwest of New Delhi. It's well-connected to the capital city via road and metro.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li>Coordinates: 28.4089° N, 77.0378° E</li>
+            <li>Area: 732 km²</li>
+            <li>Elevation: 220 meters above sea level</li>
+          </ul>
+        </div>
+        <div class="card" style="padding: 2rem;">
+          <h3>Climate</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+            Gurugram experiences a semi-arid climate with hot summers, monsoon rains, and mild winters.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>Summer (March-June):</strong> Hot and dry, temperatures 25-45°C</li>
+            <li><strong>Monsoon (July-September):</strong> Heavy rainfall, humid conditions</li>
+            <li><strong>Winter (October-February):</strong> Mild and pleasant, 5-25°C</li>
+          </ul>
+          <p style="color: var(--color-text-light); margin-top: 1rem;">
+            <strong>Best Time to Visit:</strong> October to March for pleasant weather
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: var(--color-bg-light);">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">How to Reach</h2>
+      <div class="grid grid-3">
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">✈️</div>
+          <h3>By Air</h3>
+          <p style="color: var(--color-text-light);">
+            Indira Gandhi International Airport (DEL) in New Delhi is the nearest airport, located about 15 km away. Regular flights connect to major cities worldwide.
+          </p>
+        </div>
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚂</div>
+          <h3>By Train</h3>
+          <p style="color: var(--color-text-light);">
+            Gurugram Railway Station connects to major cities. New Delhi Railway Station (30 km) and Nizamuddin Railway Station (35 km) are also accessible.
+          </p>
+        </div>
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
+          <h3>By Road</h3>
+          <p style="color: var(--color-text-light);">
+            Well-connected via National Highways NH-8 and NH-48. Regular bus services and taxis available from Delhi and nearby cities.
+          </p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/transport" class="btn">Learn More About Transport</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

@@ -1,0 +1,83 @@
+---
+import './Navbar.css';
+---
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="/" class="navbar-logo">
+      <span class="logo-icon">🏛️</span>
+      <span class="logo-text">Gurugram</span>
+      <span class="logo-subtext">Tourism</span>
+    </a>
+    
+    <button 
+      class="navbar-toggle"
+      id="navbar-toggle"
+      aria-label="Toggle menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="navbar-menu" id="navbar-menu">
+      <li class="navbar-item">
+        <a href="/" class="navbar-link">
+          <span class="link-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="/about" class="navbar-link">
+          <span class="link-icon">ℹ️</span>
+          <span>About</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="/attractions" class="navbar-link">
+          <span class="link-icon">✨</span>
+          <span>Attractions</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="/gallery" class="navbar-link">
+          <span class="link-icon">📸</span>
+          <span>Gallery</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="/contact" class="navbar-link">
+          <span class="link-icon">📧</span>
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="/booking" class="navbar-cta">
+      <span>🎫</span>
+      <span>Book Now</span>
+    </a>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('navbar-toggle');
+  const menu = document.getElementById('navbar-menu');
+  
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    const links = menu.querySelectorAll('.navbar-link');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        menu.classList.remove('active');
+      });
+    });
+  }
+</script>
+

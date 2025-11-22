@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Travel Tips" description="Essential travel tips and practical information for visiting Gurugram.">
+  <Hero 
+    title="Travel Tips"
+    subtitle="Everything You Need to Know"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2>Best Time to Visit</h2>
+        <div class="grid grid-2" style="margin: 2rem 0 4rem;">
+          <div class="card" style="padding: 1.5rem;">
+            <h4>October - March</h4>
+            <p style="color: var(--color-text-light);">
+              <strong>Best Season</strong><br/>
+              Pleasant weather with temperatures ranging from 10-25°C. Perfect for sightseeing and outdoor activities.
+            </p>
+          </div>
+          <div class="card" style="padding: 1.5rem;">
+            <h4>April - June</h4>
+            <p style="color: var(--color-text-light);">
+              <strong>Summer</strong><br/>
+              Hot and dry (25-45°C). Stay hydrated and plan indoor activities during peak afternoon hours.
+            </p>
+          </div>
+          <div class="card" style="padding: 1.5rem;">
+            <h4>July - September</h4>
+            <p style="color: var(--color-text-light);">
+              <strong>Monsoon</strong><br/>
+              Heavy rainfall and humidity. Carry umbrellas and plan accordingly. Some outdoor activities may be limited.
+            </p>
+          </div>
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Year Round</h4>
+            <p style="color: var(--color-text-light);">
+              <strong>Indoor Attractions</strong><br/>
+              Malls, museums, and indoor entertainment venues are great options regardless of weather.
+            </p>
+          </div>
+        </div>
+
+        <h2>Safety Tips</h2>
+        <div class="card" style="padding: 2rem; margin: 2rem 0 4rem;">
+          <ul style="color: var(--color-text-light); line-height: 2.5;">
+            <li>✓ Keep important documents and valuables in hotel safe</li>
+            <li>✓ Use registered taxis and app-based cab services</li>
+            <li>✓ Avoid isolated areas late at night</li>
+            <li>✓ Keep emergency contact numbers handy</li>
+            <li>✓ Be cautious with street food - choose busy, popular stalls</li>
+            <li>✓ Stay hydrated, especially during summer</li>
+            <li>✓ Respect local customs and traditions</li>
+            <li>✓ Keep copies of important documents</li>
+          </ul>
+        </div>
+
+        <h2>Local Etiquette & Customs</h2>
+        <div class="grid grid-2" style="margin: 2rem 0 4rem;">
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Dress Code</h4>
+            <p style="color: var(--color-text-light);">
+              Modest clothing is appreciated, especially when visiting religious sites. Cover shoulders and knees at temples.
+            </p>
+          </div>
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Greetings</h4>
+            <p style="color: var(--color-text-light);">
+              "Namaste" with folded hands is a respectful greeting. Handshakes are also acceptable in business settings.
+            </p>
+          </div>
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Temple Visits</h4>
+            <p style="color: var(--color-text-light);">
+              Remove shoes before entering temples. Photography may be restricted in some areas - check signs.
+            </p>
+          </div>
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Dining</h4>
+            <p style="color: var(--color-text-light);">
+              Many restaurants serve vegetarian food. It's polite to finish what you order. Tipping (10-15%) is appreciated.
+            </p>
+          </div>
+        </div>
+
+        <h2>Practical Information</h2>
+        <div class="grid grid-2" style="margin: 2rem 0 4rem;">
+          <div class="card" style="padding: 2rem;">
+            <h3>Currency</h3>
+            <p style="color: var(--color-text-light);">
+              Indian Rupee (INR) is the currency. Credit/debit cards are widely accepted. ATMs are easily available. Keep cash for small vendors and auto-rickshaws.
+            </p>
+          </div>
+          <div class="card" style="padding: 2rem;">
+            <h3>Language</h3>
+            <p style="color: var(--color-text-light);">
+              Hindi and English are widely spoken. Haryanvi is the local dialect. Most signs and menus are in English.
+            </p>
+          </div>
+          <div class="card" style="padding: 2rem;">
+            <h3>Internet & SIM</h3>
+            <p style="color: var(--color-text-light);">
+              Free WiFi available at hotels, cafes, and malls. Local SIM cards available at airport and mobile stores. 4G/5G networks widely available.
+            </p>
+          </div>
+          <div class="card" style="padding: 2rem;">
+            <h3>Time Zone</h3>
+            <p style="color: var(--color-text-light);">
+              Indian Standard Time (IST) - UTC +5:30. No daylight saving time.
+            </p>
+          </div>
+        </div>
+
+        <h2>Emergency Contacts</h2>
+        <div class="card" style="padding: 2rem; margin: 2rem 0;">
+          <div class="grid grid-2">
+            <div>
+              <h4>Emergency Services</h4>
+              <ul style="color: var(--color-text-light); line-height: 2.5;">
+                <li>Police: 100</li>
+                <li>Fire: 101</li>
+                <li>Ambulance: 102</li>
+                <li>Tourist Helpline: 1363</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tourism Office</h4>
+              <ul style="color: var(--color-text-light); line-height: 2.5;">
+                <li>Phone: +91-XXX-XXXX-XXXX</li>
+                <li>Email: info@gurugramtourism.com</li>
+                <li>Address: Tourism Office, Sector XX, Gurugram</li>
+                <li>Hours: 9 AM - 6 PM (Mon-Sat)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2>Health & Medical</h2>
+        <div class="card" style="padding: 2rem; margin: 2rem 0;">
+          <ul style="color: var(--color-text-light); line-height: 2.5;">
+            <li>✓ Drink bottled or filtered water</li>
+            <li>✓ Wash hands frequently, especially before eating</li>
+            <li>✓ Carry basic medications (pain relievers, antacids)</li>
+            <li>✓ Several hospitals and clinics available for emergencies</li>
+            <li>✓ Pharmacies are easily accessible</li>
+            <li>✓ Travel insurance recommended</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

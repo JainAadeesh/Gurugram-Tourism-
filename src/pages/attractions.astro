@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import AttractionCard from '../components/AttractionCard';
+---
+
+<BaseLayout title="Attractions" description="Discover the best places to visit in Gurugram - from historical sites to modern attractions, nature parks to entertainment venues.">
+  <Hero 
+    title="Attractions in Gurugram"
+    subtitle="Explore the Best of Our City"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Places to Visit</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          From ancient heritage sites to modern entertainment hubs, Gurugram offers something for every traveler.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Historical Sites</h3>
+        <div class="grid grid-3">
+          <AttractionCard
+            client:load
+            title="Sheetla Mata Mandir"
+            description="A revered temple dedicated to Goddess Sheetla, attracting thousands of devotees, especially during festivals."
+            category="Religious"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Farrukhnagar Fort"
+            description="An 18th-century fort built by Faujdar Khan, showcasing Mughal architecture and historical significance."
+            category="Historical"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Damdama Lake"
+            description="A scenic lake surrounded by Aravalli hills, perfect for boating, picnics, and nature walks."
+            category="Nature"
+            href="/attractions"
+          />
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Modern Attractions</h3>
+        <div class="grid grid-3">
+          <AttractionCard
+            client:load
+            title="Kingdom of Dreams"
+            description="India's first live entertainment destination featuring Bollywood musicals, cultural shows, and world-class dining experiences."
+            category="Entertainment"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Cyber Hub"
+            description="A modern dining and entertainment destination with restaurants, cafes, bars, and live music venues."
+            category="Modern"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Ambience Mall"
+            description="One of India's largest shopping malls with international brands, entertainment zones, and dining options."
+            category="Shopping"
+            href="/attractions"
+          />
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Nature & Parks</h3>
+        <div class="grid grid-3">
+          <AttractionCard
+            client:load
+            title="Sultanpur National Park"
+            description="A bird watcher's paradise with over 250 species of birds, including migratory birds from Siberia and Europe."
+            category="Nature"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Aravalli Biodiversity Park"
+            description="A restored natural habitat showcasing native flora and fauna, perfect for nature walks and bird watching."
+            category="Nature"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Leisure Valley Park"
+            description="A beautiful park with walking trails, children's play areas, and open spaces for relaxation and recreation."
+            category="Nature"
+            href="/attractions"
+          />
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Religious Places</h3>
+        <div class="grid grid-3">
+          <AttractionCard
+            client:load
+            title="ISKCON Temple"
+            description="A beautiful temple dedicated to Lord Krishna, known for its architecture and spiritual atmosphere."
+            category="Religious"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Shri Sai Baba Mandir"
+            description="A popular temple dedicated to Sai Baba, visited by devotees from across the region."
+            category="Religious"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Sheetla Mata Mandir"
+            description="One of the most revered temples in Gurugram, especially during the Chaitra month."
+            category="Religious"
+            href="/attractions"
+          />
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Entertainment & Recreation</h3>
+        <div class="grid grid-3">
+          <AttractionCard
+            client:load
+            title="Appu Ghar"
+            description="A family-friendly amusement park with rides, water slides, and entertainment for all ages."
+            category="Entertainment"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="Fun N Food Village"
+            description="An adventure park with water rides, amusement rides, and recreational activities for families."
+            category="Entertainment"
+            href="/attractions"
+          />
+          <AttractionCard
+            client:load
+            title="DLF Cyber Hub"
+            description="A vibrant hub for dining, nightlife, and entertainment with numerous restaurants and bars."
+            category="Entertainment"
+            href="/attractions"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

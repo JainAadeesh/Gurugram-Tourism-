@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Itineraries" description="Plan your perfect trip to Gurugram with our curated itineraries for 1-day, 2-day, and thematic tours.">
+  <Hero 
+    title="Plan Your Journey"
+    subtitle="Curated Itineraries for Every Traveler"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Choose Your Itinerary</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Whether you have a day or a week, we've crafted the perfect itinerary for your visit to Gurugram.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom: 3rem;">
+        <div class="card" style="padding: 2rem;">
+          <h3>1-Day Itinerary</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Perfect for a quick visit. Experience the best of Gurugram in one action-packed day.
+          </p>
+          <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Day Plan:</h4>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1.5rem;">
+            <li><strong>Morning (9 AM - 12 PM):</strong> Visit Sultanpur National Park for bird watching</li>
+            <li><strong>Afternoon (12 PM - 3 PM):</strong> Explore Cyber Hub for lunch and shopping</li>
+            <li><strong>Evening (3 PM - 6 PM):</strong> Visit Kingdom of Dreams</li>
+            <li><strong>Night (7 PM - 10 PM):</strong> Dinner at Ambience Mall and explore the entertainment zone</li>
+          </ul>
+          <a href="/itineraries/1-day" class="btn">View Detailed Itinerary</a>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>2-Day Itinerary</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Take your time to explore Gurugram's culture, food, shopping, and entertainment over two days.
+          </p>
+          <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Day 1:</h4>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1rem;">
+            <li>Morning: Sultanpur National Park</li>
+            <li>Afternoon: Historical sites and temples</li>
+            <li>Evening: Kingdom of Dreams show</li>
+          </ul>
+          <h4 style="margin-bottom: 1rem;">Day 2:</h4>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1.5rem;">
+            <li>Morning: Shopping at Ambience Mall</li>
+            <li>Afternoon: Food tour at Cyber Hub</li>
+            <li>Evening: Leisure Valley Park and local markets</li>
+          </ul>
+          <a href="/itineraries/2-day" class="btn">View Detailed Itinerary</a>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 4rem 0 3rem;">Thematic Itineraries</h2>
+      <div class="grid grid-3">
+        <div class="card" style="padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">👨‍👩‍👧‍👦</div>
+          <h3 style="text-align: center;">Family Fun</h3>
+          <p style="color: var(--color-text-light); text-align: center; margin-bottom: 1.5rem;">
+            Perfect for families with kids. Includes amusement parks, interactive experiences, and family-friendly dining.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+            <li>Appu Ghar amusement park</li>
+            <li>Kingdom of Dreams</li>
+            <li>Leisure Valley Park</li>
+            <li>Family restaurants</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">💼</div>
+          <h3 style="text-align: center;">Business Traveler</h3>
+          <p style="color: var(--color-text-light); text-align: center; margin-bottom: 1.5rem;">
+            Optimized for business travelers with limited time. Focus on convenient locations and networking opportunities.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+            <li>Cyber Hub dining</li>
+            <li>Business district tours</li>
+            <li>Evening entertainment</li>
+            <li>Networking venues</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🏛️</div>
+          <h3 style="text-align: center;">Culture & Heritage</h3>
+          <p style="color: var(--color-text-light); text-align: center; margin-bottom: 1.5rem;">
+            Explore the rich history and cultural heritage of Gurugram through temples, historical sites, and local traditions.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+            <li>Historical temples</li>
+            <li>Farrukhnagar Fort</li>
+            <li>Heritage walks</li>
+            <li>Cultural shows</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🛍️</div>
+          <h3 style="text-align: center;">Shopping & Dining</h3>
+          <p style="color: var(--color-text-light); text-align: center; margin-bottom: 1.5rem;">
+            For shopaholics and food lovers. Explore malls, markets, and culinary delights.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+            <li>Ambience Mall</li>
+            <li>Cyber Hub restaurants</li>
+            <li>Local markets</li>
+            <li>Street food tours</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🌿</div>
+          <h3 style="text-align: center;">Nature & Adventure</h3>
+          <p style="color: var(--color-text-light); text-align: center; margin-bottom: 1.5rem;">
+            For nature enthusiasts and adventure seekers. Parks, lakes, and outdoor activities.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+            <li>Sultanpur National Park</li>
+            <li>Damdama Lake</li>
+            <li>Aravalli Biodiversity Park</li>
+            <li>Adventure activities</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem; text-align: center;">🎭</div>
+          <h3 style="text-align: center;">Entertainment & Nightlife</h3>
+          <p style="color: var(--color-text-light); text-align: center; margin-bottom: 1.5rem;">
+            Experience Gurugram's vibrant nightlife, shows, and entertainment scene.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+            <li>Kingdom of Dreams</li>
+            <li>Cyber Hub nightlife</li>
+            <li>Live music venues</li>
+            <li>Late-night dining</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Events & Festivals" description="Discover upcoming events, festivals, and cultural celebrations in Gurugram.">
+  <Hero 
+    title="Events & Festivals"
+    subtitle="Celebrate Culture and Community"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Upcoming Events</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Join us for exciting events, festivals, and cultural celebrations throughout the year.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom: 3rem;">
+        <div class="card" style="padding: 2rem;">
+          <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="background: var(--color-primary); color: white; padding: 1rem; border-radius: 0.5rem; text-align: center; min-width: 80px;">
+              <div style="font-size: 1.5rem; font-weight: 700;">15</div>
+              <div style="font-size: 0.9rem;">MAR</div>
+            </div>
+            <div style="flex: 1;">
+              <h3>Gurugram Food Festival</h3>
+              <p style="color: var(--color-text-light); margin: 0.5rem 0;">March 15-17, 2026</p>
+              <p style="color: var(--color-text-light);">📍 Cyber Hub</p>
+            </div>
+          </div>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Experience the diverse culinary delights of Gurugram with local and international cuisines. Food stalls, live cooking demonstrations, and entertainment for the whole family.
+          </p>
+          <a href="#" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="background: var(--color-secondary); color: white; padding: 1rem; border-radius: 0.5rem; text-align: center; min-width: 80px;">
+              <div style="font-size: 1.5rem; font-weight: 700;">20</div>
+              <div style="font-size: 0.9rem;">JUL</div>
+            </div>
+            <div style="flex: 1;">
+              <h3>Monsoon Festival</h3>
+              <p style="color: var(--color-text-light); margin: 0.5rem 0;">July 20-22, 2026</p>
+              <p style="color: var(--color-text-light);">📍 Leisure Valley Park</p>
+            </div>
+          </div>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Celebrate the monsoon season with cultural performances, music, traditional festivities, and local arts and crafts exhibitions.
+          </p>
+          <a href="#" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="background: var(--color-accent); color: white; padding: 1rem; border-radius: 0.5rem; text-align: center; min-width: 80px;">
+              <div style="font-size: 1.5rem; font-weight: 700;">EVERY</div>
+              <div style="font-size: 0.9rem;">SAT</div>
+            </div>
+            <div style="flex: 1;">
+              <h3>Heritage Walk</h3>
+              <p style="color: var(--color-text-light); margin: 0.5rem 0;">Every Saturday, 7:00 AM</p>
+              <p style="color: var(--color-text-light);">📍 Various Locations</p>
+            </div>
+          </div>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Join guided heritage walks to discover the historical sites and stories of Gurugram. Learn about the city's rich cultural heritage.
+          </p>
+          <a href="/tours" class="btn btn-outline">Book Now</a>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="background: var(--color-primary); color: white; padding: 1rem; border-radius: 0.5rem; text-align: center; min-width: 80px;">
+              <div style="font-size: 1.5rem; font-weight: 700;">12</div>
+              <div style="font-size: 0.9rem;">NOV</div>
+            </div>
+            <div style="flex: 1;">
+              <h3>Diwali Celebrations</h3>
+              <p style="color: var(--color-text-light); margin: 0.5rem 0;">November 12, 2026</p>
+              <p style="color: var(--color-text-light);">📍 City-wide</p>
+            </div>
+          </div>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Experience the Festival of Lights in Gurugram with grand celebrations, fireworks, cultural programs, and traditional festivities.
+          </p>
+          <a href="#" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 4rem 0 3rem;">Annual Festivals</h2>
+      <div class="grid grid-3">
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎉</div>
+          <h3>Holi</h3>
+          <p style="color: var(--color-text-light);">March</p>
+          <p style="color: var(--color-text-light); margin-top: 1rem; font-size: 0.9rem;">
+            The festival of colors celebrated with great enthusiasm across the city.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🪔</div>
+          <h3>Diwali</h3>
+          <p style="color: var(--color-text-light);">October/November</p>
+          <p style="color: var(--color-text-light); margin-top: 1rem; font-size: 0.9rem;">
+            Festival of lights with grand celebrations, fireworks, and cultural events.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎭</div>
+          <h3>Gurugram Utsav</h3>
+          <p style="color: var(--color-text-light);">December</p>
+          <p style="color: var(--color-text-light); margin-top: 1rem; font-size: 0.9rem;">
+            Annual cultural festival showcasing local arts, music, and traditions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

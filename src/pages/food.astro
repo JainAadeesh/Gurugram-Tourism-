@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Food & Cuisine" description="Discover Gurugram's diverse culinary scene - from traditional Haryanvi cuisine to international flavors.">
+  <Hero 
+    title="Food & Cuisine"
+    subtitle="A Culinary Journey Through Gurugram"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Local Cuisine</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Gurugram offers a rich culinary experience blending traditional Haryanvi flavors with modern international cuisine.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom: 3rem;">
+        <div class="card" style="padding: 2rem;">
+          <h3>Traditional Haryanvi Cuisine</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Experience authentic Haryanvi dishes that reflect the agricultural heritage of the region.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>Bajra Roti:</strong> Millet bread served with vegetables</li>
+            <li><strong>Kachri ki Sabzi:</strong> Traditional vegetable curry</li>
+            <li><strong>Singri ki Sabzi:</strong> A local delicacy</li>
+            <li><strong>Hara Dhania Cholia:</strong> Green coriander and chickpea curry</li>
+            <li><strong>Bathua Raita:</strong> Yogurt with bathua leaves</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Street Food</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Explore the vibrant street food scene with flavors from across India.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>Chole Bhature:</strong> Spiced chickpeas with fried bread</li>
+            <li><strong>Gol Gappe:</strong> Crispy hollow puris with tangy water</li>
+            <li><strong>Dahi Bhalla:</strong> Lentil dumplings in yogurt</li>
+            <li><strong>Aloo Tikki:</strong> Spiced potato patties</li>
+            <li><strong>Jalebi:</strong> Sweet syrupy dessert</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 4rem 0 3rem;">Recommended Restaurants</h2>
+      <div class="grid grid-3">
+        <div class="card" style="padding: 1.5rem;">
+          <h4>Fine Dining</h4>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-top: 1rem;">
+            <li>• The Great Kabab Factory</li>
+            <li>• Bukhara (ITC Marriott)</li>
+            <li>• Made in India</li>
+            <li>• Farzi Cafe</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h4>Casual Dining</h4>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-top: 1rem;">
+            <li>• Social (Cyber Hub)</li>
+            <li>• Big Chill Cafe</li>
+            <li>• Cafe Delhi Heights</li>
+            <li>• The Beer Cafe</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h4>Local Favorites</h4>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-top: 1rem;">
+            <li>• Haryanvi Thali Restaurants</li>
+            <li>• Local Dhabas</li>
+            <li>• Street Food Stalls</li>
+            <li>• Traditional Sweet Shops</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 4rem 0 3rem;">Food Tours</h2>
+      <div class="grid grid-2">
+        <div class="card" style="padding: 2rem;">
+          <h3>Street Food Tour</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Explore the best street food spots in Gurugram with a local guide. Taste authentic flavors and learn about the city's food culture.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1.5rem;">
+            <li>Duration: 3-4 hours</li>
+            <li>Includes: 8-10 food stops</li>
+            <li>Group size: Up to 10 people</li>
+            <li>Price: Starting from ₹1,500 per person</li>
+          </ul>
+          <a href="/tours" class="btn">Book Food Tour</a>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Culinary Heritage Tour</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+            Discover traditional Haryanvi cuisine and cooking methods. Visit local kitchens and learn to cook authentic dishes.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1.5rem;">
+            <li>Duration: 4-5 hours</li>
+            <li>Includes: Cooking class + meals</li>
+            <li>Group size: Up to 8 people</li>
+            <li>Price: Starting from ₹2,500 per person</li>
+          </ul>
+          <a href="/tours" class="btn">Book Heritage Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

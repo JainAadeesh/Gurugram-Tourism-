@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Accommodation" description="Find the perfect place to stay in Gurugram - from luxury hotels to budget-friendly options.">
+  <Hero 
+    title="Where to Stay"
+    subtitle="Comfortable Accommodation for Every Budget"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Accommodation Options</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Gurugram offers a wide range of accommodation options to suit every traveler's needs and budget.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Luxury Hotels</h3>
+        <div class="grid grid-2">
+          <div class="card" style="padding: 2rem;">
+            <h4>The Leela Ambience Gurugram</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+              A luxury hotel with world-class amenities, fine dining restaurants, spa, and conference facilities. Located in the heart of the city.
+            </p>
+            <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1.5rem; font-size: 0.9rem;">
+              <li>✓ Spa & Wellness Center</li>
+              <li>✓ Multiple Restaurants</li>
+              <li>✓ Business Center</li>
+              <li>✓ Swimming Pool</li>
+            </ul>
+            <p style="font-weight: 600; margin-bottom: 1rem;">Starting from ₹8,000/night</p>
+            <a href="/booking" class="btn btn-outline">Book Now</a>
+          </div>
+
+          <div class="card" style="padding: 2rem;">
+            <h4>ITC Marriott</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+              Premium hotel with elegant rooms, renowned restaurants including Bukhara, and excellent business facilities.
+            </p>
+            <ul style="color: var(--color-text-light); line-height: 2; margin-bottom: 1.5rem; font-size: 0.9rem;">
+              <li>✓ Fine Dining Restaurants</li>
+              <li>✓ Fitness Center</li>
+              <li>✓ Meeting Rooms</li>
+              <li>✓ Concierge Service</li>
+            </ul>
+            <p style="font-weight: 600; margin-bottom: 1rem;">Starting from ₹7,500/night</p>
+            <a href="/booking" class="btn btn-outline">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Mid-Range Hotels</h3>
+        <div class="grid grid-3">
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Holiday Inn</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem; font-size: 0.9rem;">
+              Comfortable rooms with modern amenities, restaurant, and business facilities.
+            </p>
+            <p style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">From ₹4,000/night</p>
+            <a href="/booking" class="btn btn-outline" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Book</a>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Radisson Blu</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem; font-size: 0.9rem;">
+              Well-appointed hotel with excellent service, dining options, and event spaces.
+            </p>
+            <p style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">From ₹4,500/night</p>
+            <a href="/booking" class="btn btn-outline" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Book</a>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Lemon Tree Hotel</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem; font-size: 0.9rem;">
+              Contemporary hotel with vibrant design, restaurant, and fitness center.
+            </p>
+            <p style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">From ₹3,500/night</p>
+            <a href="/booking" class="btn btn-outline" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-border);">Budget Stays</h3>
+        <div class="grid grid-3">
+          <div class="card" style="padding: 1.5rem;">
+            <h4>OYO Hotels</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem; font-size: 0.9rem;">
+              Affordable accommodation with clean rooms and basic amenities.
+            </p>
+            <p style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">From ₹1,500/night</p>
+            <a href="/booking" class="btn btn-outline" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Book</a>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Guest Houses</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem; font-size: 0.9rem;">
+              Local guest houses offering comfortable stays at reasonable prices.
+            </p>
+            <p style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">From ₹1,200/night</p>
+            <a href="/booking" class="btn btn-outline" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Book</a>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <h4>Serviced Apartments</h4>
+            <p style="color: var(--color-text-light); margin: 0.5rem 0;">⭐⭐⭐⭐</p>
+            <p style="color: var(--color-text-light); margin-bottom: 1rem; font-size: 0.9rem;">
+              Fully furnished apartments with kitchen facilities, ideal for extended stays.
+            </p>
+            <p style="font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">From ₹3,000/night</p>
+            <a href="/booking" class="btn btn-outline" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="padding: 2rem; background: var(--color-bg-light); text-align: center;">
+        <h3>Need Help Choosing?</h3>
+        <p style="color: var(--color-text-light); margin: 1rem 0;">
+          Our travel experts can help you find the perfect accommodation based on your preferences and budget.
+        </p>
+        <a href="/contact" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

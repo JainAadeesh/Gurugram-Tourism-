@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Travel & Transport" description="Complete guide to reaching Gurugram and getting around the city.">
+  <Hero 
+    title="Travel & Transport"
+    subtitle="Your Guide to Getting Around"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>How to Reach Gurugram</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Gurugram is well-connected by air, rail, and road, making it easily accessible from anywhere in India and abroad.
+        </p>
+      </div>
+
+      <div class="grid grid-3" style="margin-bottom: 4rem;">
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">✈️</div>
+          <h3>By Air</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            <strong>Indira Gandhi International Airport (DEL)</strong><br/>
+            Distance: 15 km from Gurugram<br/>
+            Travel Time: 30-45 minutes
+          </p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem;">
+            The airport is well-connected to major cities worldwide. From the airport, you can take:
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-top: 1rem; text-align: left; font-size: 0.9rem;">
+            <li>• Airport Taxi/Cab (₹500-800)</li>
+            <li>• Metro (Yellow Line to HUDA City Centre)</li>
+            <li>• Airport Express Bus</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚂</div>
+          <h3>By Train</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            <strong>Gurugram Railway Station</strong><br/>
+            Connects to major cities in India
+          </p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem;">
+            Alternative stations nearby:
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-top: 1rem; text-align: left; font-size: 0.9rem;">
+            <li>• New Delhi Railway Station (30 km)</li>
+            <li>• Nizamuddin Railway Station (35 km)</li>
+            <li>• Hazrat Nizamuddin (35 km)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
+          <h3>By Road</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            <strong>Well-Connected via Highways</strong><br/>
+            NH-8 and NH-48 pass through Gurugram
+          </p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem;">
+            Road connections:
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2; margin-top: 1rem; text-align: left; font-size: 0.9rem;">
+            <li>• Delhi: 30 km (1 hour)</li>
+            <li>• Jaipur: 250 km (4 hours)</li>
+            <li>• Agra: 200 km (3.5 hours)</li>
+            <li>• Regular bus services available</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin: 4rem 0 3rem;">Local Transport</h2>
+      <div class="grid grid-2">
+        <div class="card" style="padding: 2rem;">
+          <h3>Metro</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+            The Rapid Metro connects various parts of Gurugram and links to the Delhi Metro network.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>Rapid Metro:</strong> Connects Cyber City, Sector 55-56, and other areas</li>
+            <li><strong>Delhi Metro:</strong> Yellow Line extends to HUDA City Centre</li>
+            <li><strong>Fare:</strong> ₹10-50 depending on distance</li>
+            <li><strong>Timings:</strong> 6:00 AM - 11:00 PM</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Buses</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+            Haryana Roadways and private operators provide bus services within the city and to nearby areas.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>City Buses:</strong> Regular services across Gurugram</li>
+            <li><strong>Intercity:</strong> Connections to Delhi, Faridabad, and other cities</li>
+            <li><strong>Fare:</strong> ₹10-100 depending on distance</li>
+            <li><strong>Frequency:</strong> Every 10-15 minutes on major routes</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Taxis & Cabs</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+            Multiple cab services operate in Gurugram for convenient point-to-point travel.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>App-based:</strong> Uber, Ola, Rapido</li>
+            <li><strong>Auto-rickshaws:</strong> Available throughout the city</li>
+            <li><strong>Taxi Services:</strong> Pre-paid and on-demand</li>
+            <li><strong>Fare:</strong> Varies by service and distance</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 2rem;">
+          <h3>Car Rental</h3>
+          <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+            Self-drive and chauffeur-driven car rental options are available for flexible travel.
+          </p>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li><strong>Self-drive:</strong> Zoomcar, Revv, Myles</li>
+            <li><strong>Chauffeur-driven:</strong> Various rental companies</li>
+            <li><strong>Rates:</strong> Starting from ₹1,500/day</li>
+            <li><strong>Booking:</strong> Online and offline options</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="padding: 2rem; background: var(--color-bg-light); margin-top: 3rem;">
+        <h3 style="text-align: center; margin-bottom: 1.5rem;">Transport Tips</h3>
+        <div class="grid grid-2">
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li>✓ Metro is the fastest way to travel during peak hours</li>
+            <li>✓ Use app-based cabs for convenience and safety</li>
+            <li>✓ Auto-rickshaws are economical for short distances</li>
+            <li>✓ Book airport transfers in advance</li>
+          </ul>
+          <ul style="color: var(--color-text-light); line-height: 2;">
+            <li>✓ Traffic can be heavy during office hours (9 AM - 6 PM)</li>
+            <li>✓ Keep cash for auto-rickshaws and local buses</li>
+            <li>✓ Download metro apps for route planning</li>
+            <li>✓ Consider car rental for day trips</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

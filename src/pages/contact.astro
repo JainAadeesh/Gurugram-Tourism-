@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import BookingForm from '../components/BookingForm';
+---
+
+<BaseLayout title="Contact Us" description="Get in touch with Gurugram Tourism for inquiries, bookings, and assistance.">
+  <Hero 
+    title="Contact Us"
+    subtitle="We're Here to Help"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="margin-bottom: 4rem;">
+        <div>
+          <h2>Get in Touch</h2>
+          <p style="color: var(--color-text-light); margin: 1.5rem 0;">
+            Have questions about visiting Gurugram? Need help planning your trip? We're here to assist you!
+          </p>
+          
+          <div style="margin-top: 2rem;">
+            <h3>Contact Information</h3>
+            <div style="margin-top: 1.5rem;">
+              <div style="margin-bottom: 1.5rem;">
+                <h4>📍 Address</h4>
+                <p style="color: var(--color-text-light);">
+                  Tourism Office, Sector XX<br/>
+                  Gurugram, Haryana 122001<br/>
+                  India
+                </p>
+              </div>
+              
+              <div style="margin-bottom: 1.5rem;">
+                <h4>📞 Phone</h4>
+                <p style="color: var(--color-text-light);">
+                  +91-XXX-XXXX-XXXX<br/>
+                  +91-XXX-XXXX-XXXX
+                </p>
+              </div>
+              
+              <div style="margin-bottom: 1.5rem;">
+                <h4>📧 Email</h4>
+                <p style="color: var(--color-text-light);">
+                  info@gurugramtourism.com<br/>
+                  tours@gurugramtourism.com
+                </p>
+              </div>
+              
+              <div style="margin-bottom: 1.5rem;">
+                <h4>🕒 Office Hours</h4>
+                <p style="color: var(--color-text-light);">
+                  Monday - Saturday: 9:00 AM - 6:00 PM<br/>
+                  Sunday: 10:00 AM - 4:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-bg-light); border-radius: 0.5rem;">
+            <h4>Follow Us</h4>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+              <a href="#" style="font-size: 1.5rem;">📘</a>
+              <a href="#" style="font-size: 1.5rem;">📷</a>
+              <a href="#" style="font-size: 1.5rem;">🐦</a>
+              <a href="#" style="font-size: 1.5rem;">📺</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <BookingForm client:load title="Send Us a Message" type="general" />
+        </div>
+      </div>
+
+      <div class="card" style="padding: 2rem; background: linear-gradient(135deg, var(--color-bg-light) 0%, #f0f4ff 100%); text-align: center;">
+        <h3 style="margin-bottom: 1rem;">Visit Our Office</h3>
+        <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">
+          Our office is easily accessible by metro and road. Free parking available.
+        </p>
+        <div style="padding: 2rem; background: white; border-radius: 0.5rem; margin-top: 1rem;">
+          <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">📍 Tourism Office</p>
+          <p style="color: var(--color-text-light);">Sector XX, Gurugram, Haryana 122001, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

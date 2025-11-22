@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Gallery" description="Explore Gurugram through our photo and video gallery showcasing attractions, events, and experiences.">
+  <Hero 
+    title="🎨 Gallery"
+    subtitle="Visual Journey Through Gurugram"
+  />
+
+  <section class="section" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="background: linear-gradient(135deg, #1f2937 0%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">📸 Photo Gallery</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Discover the vibrant beauty and rich cultural heritage of Gurugram through our carefully curated collection of photographs.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 4rem;">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid; border-image: linear-gradient(90deg, #f59e0b 0%, #10b981 100%) 1;">
+          <span style="font-size: 2rem; margin-right: 1rem;">🏛️</span>
+          <h3 style="margin: 0;">Heritage & Attractions</h3>
+        </div>
+        <div class="grid grid-3">
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer; group">
+            <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=600&h=450&fit=crop" alt="Kingdom of Dreams" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+              🎭 Kingdom of Dreams
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=450&fit=crop" alt="Sultanpur National Park" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+              🦅 Sultanpur National Park
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="/images/DLF-Cyber-Hub-2.jpg" alt="Cyber Hub" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+              🌃 Cyber Hub
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=450&fit=crop" alt="Damdama Lake" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+              💧 Damdama Lake
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&h=450&fit=crop" alt="Shopping Mall" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+              🛍️ Ambience Mall
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1462332420958-a05d1e7413413?w=600&h=450&fit=crop" alt="Temple" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+              🕉️ Sheetla Mata Mandir
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 4rem;">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid; border-image: linear-gradient(90deg, #f59e0b 0%, #10b981 100%) 1;">
+          <span style="font-size: 2rem; margin-right: 1rem;">🎉</span>
+          <h3 style="margin: 0;">Festivals & Cultural Events</h3>
+        </div>
+        <div class="grid grid-3">
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561404?w=600&h=450&fit=crop" alt="Food Festival" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(245, 158, 11, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
+              🍽️ Food Festival
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=450&fit=crop" alt="Diwali Celebrations" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(249, 115, 22, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
+              🪔 Diwali Celebrations
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=450&fit=crop" alt="Cultural Performances" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(239, 68, 68, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
+              🎭 Cultural Performances
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 4rem;">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid; border-image: linear-gradient(90deg, #f59e0b 0%, #10b981 100%) 1;">
+          <span style="font-size: 2rem; margin-right: 1rem;">🍛</span>
+          <h3 style="margin: 0;">Culinary Delights & Culture</h3>
+        </div>
+        <div class="grid grid-3">
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="/images/69025788.avif" alt="Street Food" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(220, 38, 38, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
+              🥘 Street Food
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=450&fit=crop" alt="Traditional Cuisine" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(139, 92, 246, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
+              🍜 Traditional Cuisine
+            </div>
+          </div>
+          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
+            <img src="/images/Places-To-Visit-In-Gurgaon-In-Evening-840x425.jpg" alt="Local Markets" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(34, 197, 94, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
+              🏪 Local Markets
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin: 4rem 0; text-align: center;">
+        <h2 style="background: linear-gradient(135deg, #1f2937 0%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem;">🎬 Video Gallery</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 0 auto 3rem;">Experience Gurugram in motion - explore our collection of immersive video content</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="video-card" style="padding: 2rem; text-align: center; background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%); border-radius: 1.5rem; border: 2px solid rgba(245, 158, 11, 0.3);">
+          <div style="width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="font-size: 3rem;">▶️</div>
+          </div>
+          <h4 style="margin-bottom: 0.75rem;">🌆 Gurugram City Tour</h4>
+          <p style="color: var(--color-text-light); font-size: 0.95rem; line-height: 1.6;">Explore the highlights of Gurugram in this comprehensive city tour video featuring modern infrastructure and cultural landmarks.</p>
+        </div>
+        <div class="video-card" style="padding: 2rem; text-align: center; background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%); border-radius: 1.5rem; border: 2px solid rgba(245, 158, 11, 0.3);">
+          <div style="width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div style="font-size: 3rem;">▶️</div>
+          </div>
+          <h4 style="margin-bottom: 0.75rem;">🍜 Food Tour Experience</h4>
+          <p style="color: var(--color-text-light); font-size: 0.95rem; line-height: 1.6;">Join us on a culinary journey through Gurugram's best food spots, from street food to fine dining establishments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+

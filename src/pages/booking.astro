@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import BookingForm from '../components/BookingForm';
+---
+
+<BaseLayout title="Bookings & Reservations" description="Book your accommodation, tours, and services in Gurugram.">
+  <Hero 
+    title="Bookings & Reservations"
+    subtitle="Plan Your Perfect Trip"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2>Make a Booking</h2>
+        <p style="color: var(--color-text-light); font-size: 1.1rem; max-width: 700px; margin: 1rem auto;">
+          Book your accommodation, tours, guides, and other services for your visit to Gurugram.
+        </p>
+      </div>
+
+      <div class="grid grid-3" style="margin-bottom: 4rem;">
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🏨</div>
+          <h3>Accommodation</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Book hotels, guest houses, and serviced apartments in Gurugram.
+          </p>
+          <a href="/stay" class="btn btn-outline" style="margin-top: 1rem;">View Options</a>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎭</div>
+          <h3>Tours & Guides</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Book guided tours, heritage walks, food tours, and local guides.
+          </p>
+          <a href="/tours" class="btn btn-outline" style="margin-top: 1rem;">View Tours</a>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
+          <h3>Transport</h3>
+          <p style="color: var(--color-text-light); margin: 1rem 0;">
+            Book airport transfers, car rentals, and chauffeur services.
+          </p>
+          <a href="/transport" class="btn btn-outline" style="margin-top: 1rem;">Learn More</a>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div>
+          <BookingForm client:load title="Booking Request" type="general" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3>Booking Information</h3>
+          <div style="margin-top: 2rem;">
+            <h4 style="margin-bottom: 1rem;">How It Works</h4>
+            <ol style="color: var(--color-text-light); line-height: 2.5; padding-left: 1.5rem;">
+              <li>Fill out the booking form with your requirements</li>
+              <li>Our team will review your request</li>
+              <li>We'll contact you within 24 hours to confirm details</li>
+              <li>Complete payment and receive confirmation</li>
+            </ol>
+          </div>
+
+          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-bg-light); border-radius: 0.5rem;">
+            <h4 style="margin-bottom: 1rem;">Payment Options</h4>
+            <ul style="color: var(--color-text-light); line-height: 2;">
+              <li>✓ Credit/Debit Cards</li>
+              <li>✓ UPI (PhonePe, Google Pay, Paytm)</li>
+              <li>✓ Net Banking</li>
+              <li>✓ Cash on Arrival (for some services)</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-bg-light); border-radius: 0.5rem;">
+            <h4 style="margin-bottom: 1rem;">Cancellation Policy</h4>
+            <ul style="color: var(--color-text-light); line-height: 2; font-size: 0.9rem;">
+              <li>• Free cancellation up to 48 hours before</li>
+              <li>• 50% refund for 24-48 hours notice</li>
+              <li>• No refund for cancellations less than 24 hours</li>
+              <li>• Terms may vary by service provider</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h4>Need Immediate Assistance?</h4>
+            <p style="color: var(--color-text-light); margin-top: 1rem;">
+              📞 +91-XXX-XXXX-XXXX<br/>
+              📧 bookings@gurugramtourism.com<br/>
+              🕒 Available 24/7 for urgent bookings
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+
