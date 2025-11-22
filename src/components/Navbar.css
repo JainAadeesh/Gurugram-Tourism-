@@ -1,10 +1,11 @@
 .navbar {
-  background: linear-gradient(135deg, #faf8f3 0%, #f0ebe5 100%);
-  box-shadow: 0 8px 32px rgba(212, 83, 31, 0.12);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 24px rgba(16,24,40,0.06);
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 2px solid rgba(212, 83, 31, 0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .navbar-container {
@@ -38,6 +39,7 @@
   background-clip: text;
   font-size: 1.5rem;
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .logo-subtext {
@@ -70,11 +72,11 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #2d2424;
+  color: var(--color-text);
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0.75rem 1.25rem;
+  transition: transform 0.18s ease, color 0.18s ease;
+  padding: 0.6rem 1rem;
   border-radius: 0.5rem;
   position: relative;
 }
@@ -86,7 +88,7 @@
 
 .navbar-link:hover {
   color: #d4531f;
-  background: rgba(212, 83, 31, 0.08);
+  background: rgba(212, 83, 31, 0.06);
   transform: translateY(-2px);
 }
 
@@ -127,26 +129,26 @@
   letter-spacing: 0.5px;
 }
 
+.navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #d4531f 0%, #c41e3a 100%);
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 8px 26px rgba(212, 83, 31, 0.18);
+  letter-spacing: 0.4px;
+}
 .navbar-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(212, 83, 31, 0.4);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 36px rgba(212, 83, 31, 0.22);
   background: linear-gradient(135deg, #c41e3a 0%, #b5410a 100%);
 }
-
-.navbar-toggle {
-  display: none;
-  flex-direction: column;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  gap: 5px;
-}
-
-.navbar-toggle span {
-  width: 28px;
-  height: 3px;
-  background: #d4531f;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
   display: block;

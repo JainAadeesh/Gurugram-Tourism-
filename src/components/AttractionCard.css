@@ -9,7 +9,8 @@
 .attraction-card-image {
   position: relative;
   width: 100%;
-  height: 250px;
+  aspect-ratio: 16 / 9;
+  max-height: 420px;
   overflow: hidden;
 }
 
@@ -18,6 +19,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .attraction-card:hover .attraction-card-image img {
@@ -74,7 +76,8 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .attraction-card-image {
-    height: 200px;
+    aspect-ratio: 16 / 9;
+    max-height: 300px;
   }
 
   .attraction-card-content {
@@ -89,7 +92,8 @@
 
 @media (max-width: 480px) {
   .attraction-card-image {
-    height: 150px;
+    aspect-ratio: 16 / 9;
+    max-height: 200px;
   }
 
   .attraction-card-content {

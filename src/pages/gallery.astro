@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+import GalleryCard from '../components/GalleryCard';
 ---
 
 <BaseLayout title="Gallery" description="Explore Gurugram through our photo and video gallery showcasing attractions, events, and experiences.">
@@ -9,7 +10,7 @@ import Hero from '../components/Hero.astro';
     subtitle="Visual Journey Through Gurugram"
   />
 
-  <section class="section" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+  <section class="section gallery-section">
     <div class="container">
       <div style="text-align: center; margin-bottom: 3rem;">
         <h2 style="background: linear-gradient(135deg, #1f2937 0%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">📸 Photo Gallery</h2>
@@ -24,42 +25,12 @@ import Hero from '../components/Hero.astro';
           <h3 style="margin: 0;">Heritage & Attractions</h3>
         </div>
         <div class="grid grid-3">
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer; group">
-            <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=600&h=450&fit=crop" alt="Kingdom of Dreams" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
-              🎭 Kingdom of Dreams
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=450&fit=crop" alt="Sultanpur National Park" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
-              🦅 Sultanpur National Park
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="/images/DLF-Cyber-Hub-2.jpg" alt="Cyber Hub" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
-              🌃 Cyber Hub
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=450&fit=crop" alt="Damdama Lake" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
-              💧 Damdama Lake
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&h=450&fit=crop" alt="Shopping Mall" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
-              🛍️ Ambience Mall
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1462332420958-a05d1e7413413?w=600&h=450&fit=crop" alt="Temple" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(31, 41, 55, 0.7); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
-              🕉️ Sheetla Mata Mandir
-            </div>
-          </div>
+          <GalleryCard client:load image="/images/Kingdom-Of-Dreams.jpg" title="Kingdom of Dreams" emoji="🎭" overlayBackground="rgba(31, 41, 55, 0.7)" />
+          <GalleryCard client:load image="/images/images.jpeg" title="Sultanpur National Park" emoji="🦅" overlayBackground="rgba(31, 41, 55, 0.7)" />
+          <GalleryCard client:load image="/images/DLF-Cyber-Hub-2.jpg" title="Cyber Hub" emoji="🌃" overlayBackground="rgba(31, 41, 55, 0.7)" />
+          <GalleryCard client:load image="/images/32nd-Avenue.jpg" title="Damdama Lake" emoji="💧" overlayBackground="rgba(31, 41, 55, 0.7)" />
+          <GalleryCard client:load image="/images/Places-To-Visit-In-Gurgaon-In-Evening-840x425.jpg" title="Ambience Mall" emoji="🛍️" overlayBackground="rgba(31, 41, 55, 0.7)" />
+          <GalleryCard client:load image="/images/Kingdom-Of-Dreams.jpg" title="Sheetla Mata Mandir" emoji="🕉️" overlayBackground="rgba(31, 41, 55, 0.7)" />
         </div>
       </div>
 
@@ -69,24 +40,9 @@ import Hero from '../components/Hero.astro';
           <h3 style="margin: 0;">Festivals & Cultural Events</h3>
         </div>
         <div class="grid grid-3">
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561404?w=600&h=450&fit=crop" alt="Food Festival" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(245, 158, 11, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
-              🍽️ Food Festival
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=450&fit=crop" alt="Diwali Celebrations" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(249, 115, 22, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
-              🪔 Diwali Celebrations
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=450&fit=crop" alt="Cultural Performances" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(239, 68, 68, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
-              🎭 Cultural Performances
-            </div>
-          </div>
+          <GalleryCard client:load image="https://images.unsplash.com/photo-1555939594-58d7cb561404?w=600&h=450&fit=crop" title="Food Festival" emoji="🍽️" overlayBackground="rgba(245, 158, 11, 0.8)" />
+          <GalleryCard client:load image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=450&fit=crop" title="Diwali Celebrations" emoji="🪔" overlayBackground="rgba(249, 115, 22, 0.8)" />
+          <GalleryCard client:load image="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=450&fit=crop" title="Cultural Performances" emoji="🎭" overlayBackground="rgba(239, 68, 68, 0.8)" />
         </div>
       </div>
 
@@ -96,24 +52,9 @@ import Hero from '../components/Hero.astro';
           <h3 style="margin: 0;">Culinary Delights & Culture</h3>
         </div>
         <div class="grid grid-3">
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="/images/69025788.avif" alt="Street Food" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(220, 38, 38, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
-              🥘 Street Food
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=450&fit=crop" alt="Traditional Cuisine" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(139, 92, 246, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
-              🍜 Traditional Cuisine
-            </div>
-          </div>
-          <div class="gallery-card" style="overflow: hidden; aspect-ratio: 4/3; cursor: pointer;">
-            <img src="/images/Places-To-Visit-In-Gurgaon-In-Evening-840x425.jpg" alt="Local Markets" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(34, 197, 94, 0.8); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 1.1rem;">
-              🏪 Local Markets
-            </div>
-          </div>
+          <GalleryCard client:load image="/images/69025788.avif" title="Street Food" emoji="🥘" overlayBackground="rgba(220, 38, 38, 0.8)" />
+          <GalleryCard client:load image="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=450&fit=crop" title="Traditional Cuisine" emoji="🍜" overlayBackground="rgba(139, 92, 246, 0.8)" />
+          <GalleryCard client:load image="/images/Places-To-Visit-In-Gurgaon-In-Evening-840x425.jpg" title="Local Markets" emoji="🏪" overlayBackground="rgba(34, 197, 94, 0.8)" />
         </div>
       </div>
 
