@@ -54,6 +54,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} Gurugram Tourism. All rights reserved.</p>
+          <p>By Aadeesh jain</p>
           <div className="footer-legal">
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
